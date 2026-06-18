@@ -4,12 +4,12 @@
  *    les horaires et les liens. Tout le site lit ces valeurs.
  */
 export const siteConfig = {
-  name: "Eclosion Formation",
-  shortName: "Eclosion",
+  name: "Eclosyon Formation",
+  shortName: "Eclosyon",
   baseline: "Centre de Formation d'Apprentis",
   description:
-    "Eclosion Formation accompagne les apprentis et les entreprises vers la réussite : titres professionnels en apprentissage, suivi pédagogique structuré et accompagnement humain.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.eclosion-formation.fr",
+    "Eclosyon Formation accompagne les apprentis et les entreprises vers la réussite : titres professionnels en apprentissage, suivi pédagogique structuré et accompagnement humain.",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.eclosyon-formation.fr",
 
   // Coordonnées — À PERSONNALISER
   contact: {
@@ -19,7 +19,7 @@ export const siteConfig = {
       city: "Gentilly",
       country: "France",
     },
-    email: "contact@eclosion-formation.fr",
+    email: "contact@eclosyon-formation.fr",
     phone: "06 17 42 72 49",
     phoneHref: "+33617427249",
   },
@@ -34,7 +34,7 @@ export const siteConfig = {
   // Référent handicap — À PERSONNALISER
   referentHandicap: {
     name: "Mme. Référent Handicap",
-    email: "referent-handicap@eclosion-formation.fr",
+    email: "referent-handicap@eclosyon-formation.fr",
     phone: "06 17 42 72 49",
     phoneHref: "+33617427249",
   },

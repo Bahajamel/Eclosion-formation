@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez Eclosion Formation : adresse, email, téléphone et horaires. Posez vos questions ou demandez à être rappelé par notre équipe.",
+    "Contactez Eclosyon Formation : adresse, email, téléphone et horaires. Posez vos questions ou demandez à être rappelé par notre équipe.",
 };
 
 const { contact, hours } = siteConfig;

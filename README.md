@@ -1,6 +1,6 @@
-# Eclosion Formation — Site vitrine
+# Eclosyon Formation — Site vitrine
 
-Site vitrine institutionnel pour le CFA **Eclosion Formation**, construit avec Next.js (App Router), TypeScript, Tailwind CSS, des composants de type shadcn/ui, des icônes Lucide et de légères animations Framer Motion.
+Site vitrine institutionnel pour le CFA **Eclosyon Formation**, construit avec Next.js (App Router), TypeScript, Tailwind CSS, des composants de type shadcn/ui, des icônes Lucide et de légères animations Framer Motion.
 
 ## 🚀 Démarrer le projet
 

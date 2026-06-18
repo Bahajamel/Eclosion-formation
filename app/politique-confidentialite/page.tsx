@@ -19,10 +19,6 @@ export default function PolitiqueConfidentialitePage() {
       <section className="py-16 lg:py-20">
         <div className="container">
           <div className="mx-auto max-w-3xl space-y-10 text-muted-foreground">
-            <p className="rounded-lg border border-accent/30 bg-accent/5 p-4 text-sm">
-              ⚠️ Contenu générique à personnaliser et à faire valider selon votre
-              situation et la réglementation en vigueur (RGPD).
-            </p>
 
             <p className="leading-relaxed">
               {siteConfig.name} accorde une grande importance à la protection de

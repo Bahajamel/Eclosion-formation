@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "Candidater",
   description:
-    "Déposez votre candidature à l'une des formations d'Eclosion Formation. Un formulaire simple et un accompagnement à chaque étape de votre projet en alternance.",
+    "Déposez votre candidature à l'une des formations d'Eclosyon Formation. Un formulaire simple et un accompagnement à chaque étape de votre projet en alternance.",
 };
 
 const apres = [

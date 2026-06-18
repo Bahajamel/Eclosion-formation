@@ -10,7 +10,7 @@ import { CtaSection } from "@/components/CtaSection";
 export const metadata: Metadata = {
   title: "Nos formations",
   description:
-    "Découvrez les titres professionnels proposés par Eclosion Formation : RNCP, niveau, durée, modalité, objectifs et débouchés.",
+    "Découvrez les titres professionnels proposés par Eclosyon Formation : RNCP, niveau, durée, modalité, objectifs et débouchés.",
 };
 
 export default function FormationsPage() {

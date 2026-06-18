@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Accessibilité handicap",
   description:
-    "Eclosion Formation s'engage pour l'accessibilité de ses formations aux personnes en situation de handicap : référent handicap dédié et adaptations possibles selon la situation.",
+    "Eclosyon Formation s'engage pour l'accessibilité de ses formations aux personnes en situation de handicap : référent handicap dédié et adaptations possibles selon la situation.",
 };
 
 const referent = siteConfig.referentHandicap;

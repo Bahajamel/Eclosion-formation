@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Fond / texte */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 13%;
+
+    /* Bleu foncé institutionnel (couleur principale) */
+    --primary: 218 58% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Gris clair (sections, surfaces secondaires) */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 218 58% 22%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 18% 42%;
+
+    /* Couleur d'accent discrète (vert "éclosion") */
+    --accent: 168 62% 34%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Accent clair (turquoise) pour dégradés et reflets discrets */
+    --accent-soft: 182 55% 45%;
+
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 90%;
+    --input: 214 32% 88%;
+    --ring: 168 62% 34%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Accessibilité : focus visible cohérent */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  /* Bandeau de lien d'évitement (skip link) */
+  .skip-link {
+    @apply sr-only;
+  }
+  .skip-link:focus {
+    @apply not-sr-only fixed left-4 top-4 z-[100] rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground;
+  }
+
+  /* Grille discrète pour fonds de sections (sur clair) */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.7) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.7) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  /* Grille discrète sur fond foncé (bandeaux bleus) */
+  .bg-grid-dark {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  /* Estompe un motif vers les bords */
+  .mask-fade-edges {
+    -webkit-mask-image: radial-gradient(ellipse at center, black 35%, transparent 80%);
+    mask-image: radial-gradient(ellipse at center, black 35%, transparent 80%);
+  }
+}

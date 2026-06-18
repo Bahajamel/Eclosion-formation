@@ -13,14 +13,14 @@ interface LogoProps {
 /**
  * Logo du CFA.
  * 👉 Les images du logo sont dans le dossier /public.
- *    - Fond clair (en-tête)  → eclosion_horizontal_couleur.png
- *    - Fond foncé (pied de page) → eclosion_horizontal_blanc.png
+ *    - Fond clair (en-tête)  → eclosyon_horizontal_couleur.png
+ *    - Fond foncé (pied de page) → eclosyon_horizontal_blanc.png
  */
 export function Logo({ className, variant = "default" }: LogoProps) {
   const src =
     variant === "light"
-      ? "/eclosion_horizontal_blanc.png"
-      : "/eclosion_horizontal_couleur.png";
+      ? "/eclosyon_horizontal_blanc.png"
+      : "/eclosyon_horizontal_couleur.png";
 
   return (
     <Link
@@ -32,7 +32,7 @@ export function Logo({ className, variant = "default" }: LogoProps) {
         src={src}
         alt={siteConfig.name}
         width={2000}
-        height={602}
+        height={571}
         priority
         className="h-11 w-auto"
       />
